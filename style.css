@@ -60,7 +60,7 @@ table {
 .header {
   background-color: white;
   grid-column: 2/-1;
-  box-shadow: 5px 5px 2px black;
+  box-shadow: 0 2px 10px rgb(172, 172, 172);
 }
 
 .header > .headerTop {
@@ -143,14 +143,16 @@ a:link, a:visited {
   grid-row: 2/3;
   display: grid;
   grid-template-columns: 4fr 1fr;
+  grid-template-rows: 25px 1fr 25px 1fr;
   padding: 15px;
+  gap: 20px;
 }
 
 .cards {
+  grid-row: 2 / -1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
-  padding: 20px;
 }
 
 .card {
@@ -162,3 +164,42 @@ a:link, a:visited {
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgb(112, 112, 112);
 }
+
+.contentSide {
+  grid-row: 2/-1;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: start;
+  gap: 15px;
+}
+
+.announcements, .trending {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgb(112, 112, 112);
+}
+
+.announcements {
+  grid-template-columns: 2/3;
+  grid-template-rows: 2/3;
+  display: grid;
+  grid-template-rows: repeat(auto-fit)
+
+}
+
+.trending {
+  grid-template-columns: 2/3;
+  grid-template-rows: 3/4;
+}
+
+.aCard {
+  height: 75px;
+  width: 100px;
+  border-bottom: 0.5px solid black;
+}
+
+.aCard p {
+  white-space: wrap;
+}
+
