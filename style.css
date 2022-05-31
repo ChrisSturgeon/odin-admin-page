@@ -198,6 +198,11 @@ a:link, a:visited {
 
 .content h1 {
   font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content h1:nth-of-type(2) {
+  margin-left: 15px;
 }
 
 .cards {
@@ -205,7 +210,7 @@ a:link, a:visited {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-content: start;
-  gap: 15px;
+  gap: 25px;
 }
 
 .card {
@@ -244,9 +249,9 @@ a:link, a:visited {
 .contentSide {
   grid-row: 2/-1;
   display: grid;
-  grid-template-rows: 300px 25px 300px;
+  grid-template-rows: auto auto auto;
   align-content: start;
-  gap: 15px;
+  gap: 10px;
   padding: 0px 15px;
 }
 
@@ -264,29 +269,48 @@ a:link, a:visited {
   grid-template-columns: 2/3;
   grid-template-rows: 2/3;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  overflow: hidden;
+  grid-template-rows: repeat(3, auto);
   gap: 10px;
   margin-bottom: 18px;
+}
+
+.announcements {
+  font-size: 0.9rem;
+}
+
+.announcements h4 {
+  font-weight: bold;
 }
 
 .announcements p {
   color: grey;
   margin-top: 5px;
-  font-size: 0.9rem;
   justify-content: center;
   justify-items: center;
 }
 
-
-
 .trending {
   grid-template-columns: 2/3;
   grid-template-rows: 3/4;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 5px;
+}
+
+.trendingItem {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.trending img {
+  height: 80px;
+  width: 80px;
 }
 
 .aCard {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(185, 184, 184);
+  padding: 10px; 
 }
 
 .aCard:last-of-type {
