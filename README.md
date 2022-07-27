@@ -1,8 +1,7 @@
-The Admin Dashboard project from The Odin Project.
+# The Admin Dashboard project from The Odin Project.
 
-https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
+View it <a href="https://chrissturgeon.github.io/odin-admin-page/">here.</a>
 
-Icons created by photo3idea_studio:
+Projec spec <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard">here</a>
 
-https://www.flaticon.com/packs/hawaii-43
-https://www.flaticon.com/authors/photo3idea-studio
+Icons created by <a href="https://www.flaticon.com/authors/photo3idea-studio"> photo3idea_studio on FlatIcon </a>
